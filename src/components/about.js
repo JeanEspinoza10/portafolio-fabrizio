@@ -17,16 +17,25 @@ export default function mainAbout(idContainer){
     mainAboutElement.id = idMainAbout
 
     // Create Container of IMG
-    const divImg = document.createElement('div')
+    const divImg = document.createElement('section')
     divImg.id = 'img-main-about'
     const imgElement = document.createElement('img')
     imgElement.src = info.imgRef
     mainAboutElement.appendChild(imgElement)
 
     // Create Container of Description
-    const divDescription = document.createElement('div')
+    const divDescription = document.createElement('section')
     divDescription.id ='description-main-about'
-    
+
+    /*Add div for description and contacts*/
+    const divAboutText = document.createElement('div')
+    divAboutText.textContent = 'Hola Soy Fabrizio'
+
+    divDescription.appendChild(divAboutText)
+
+    const divContacts = document.createElement('div')
+    divContacts.textContent = 'link - url'
+    divDescription.appendChild(divContacts)
     mainAboutElement.appendChild(divDescription)
 
     
