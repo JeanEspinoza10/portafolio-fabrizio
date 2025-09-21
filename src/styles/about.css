@@ -1,0 +1,19 @@
+#id-main-about{
+    background-color: blue;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    gap: 10px;
+}
+
+
+#img-main-about {
+    width: 100%;
+    height: 100%;
+}
+
+#description-main-about{
+    width: 100%;
+    height: 100%;
+    background-color: green;
+}
